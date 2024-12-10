@@ -1,0 +1,34 @@
+{
+  "expenses": {
+    "expense1": {
+      "description": "Compra papereria",
+      "amount": 25.5,
+      "date": "2024-12-10"
+    },
+    "expense2": {
+      "description": "Lloguer oficina",
+      "amount": 500,
+      "date": "2024-12-01"
+    }
+  },
+  "clients": {
+    "client1": {
+      "name": "Empresa XYZ",
+      "email": "contact@xyz.com",
+      "phone": "123456789"
+    }
+  },
+  "invoices": {
+    "invoice1": {
+      "clientId": "client1",
+      "items": [
+        {
+          "description": "Serveis professionals",
+          "amount": 1000
+        }
+      ],
+      "total": 1000,
+      "date": "2024-12-10"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+project/
+├── index.html
+├── app/
+│   ├── app.js
+│   ├── controllers/
+│   │   └── expenseController.js
+│   ├── services/
+│   │   └── firebaseService.js
+├── css/
+│   └── styles.css
