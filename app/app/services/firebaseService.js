@@ -7,4 +7,11 @@ app.factory('FirebaseService', ['$firebaseArray', function($firebaseArray) {
       }
     };
   }]);
-  
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      console.log("Usuari connectat:", user.email);
+    } else {
+      console.log("No hi ha cap usuari connectat.");
+    }
+  });
+    
