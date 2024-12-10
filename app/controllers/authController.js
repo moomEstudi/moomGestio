@@ -14,4 +14,10 @@ app.controller('AuthController', ['$scope', function($scope) {
     var ui = new firebaseui.auth.AuthUI(firebase.auth());
     ui.start('#firebaseui-auth-container', uiConfig);
   }]);
-  
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      console.log("Usuari connectat:", user.email);
+    } else {
+      console.log("No hi ha cap usuari connectat.");
+    }
+  });  

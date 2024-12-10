@@ -25,7 +25,7 @@ app.config(function($routeProvider) {
         controller: 'ExpenseController'
       })
       .otherwise({
-        redirectTo: '/login'
+        redirectTo: '/expenses'
       });
   });
   

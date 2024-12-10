@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autònom Comptabilitat</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
 
 
 </head>
+
 <body ng-app="accountingApp">
   <div class="container">
     <div ng-view></div>
@@ -19,23 +20,24 @@
     <h2>Benvingut, {{ user.displayName || 'Usuari' }}</h2>
     <button class="btn btn-danger" ng-click="logout()">Tanca Sessió</button>
   </div>
-  
 
-<!-- AngularJS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-<!-- AngularJS ngRoute -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-<!-- AngularFire -->
-<script src="https://cdn.jsdelivr.net/npm/angularfire@2.3.0/dist/angularfire.min.js"></script>
-<!-- Aplicació -->
-<script src="app/app.js"></script>
-<script src="app/controllers/authController.js"></script>
-<script src="app/controllers/expenseController.js"></script>
-<script src="app/services/firebaseService.js"></script>
+
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <!-- AngularJS ngRoute -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <!-- AngularFire -->
+  <script src="https://cdn.jsdelivr.net/npm/angularfire@2.3.0/dist/angularfire.min.js"></script>
+  <!-- Aplicació -->
+  <script src="app/app.js"></script>
+  <script src="app/controllers/authController.js"></script>
+  <script src="app/controllers/expenseController.js"></script>
+  <script src="app/services/firebaseService.js"></script>
 
 </body>
+
 </html>
