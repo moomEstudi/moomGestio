@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+</head>
+<body ng-app="testApp">
+  <div ng-view></div>
+
+  <script>
+    var app = angular.module('testApp', ['ngRoute']);
+
+    app.config(function($routeProvider) {
+      $routeProvider
+        .when('/home', {
+          template: '<h1>Welcome to Home</h1>'
+        })
+        .otherwise({
+          redirectTo: '/home'
+        });
+    });
+  </script>
+</body>
+</html>
